@@ -5,6 +5,7 @@
  table {
     margin: 0 auto;
     border-spacing: 5px;
+    user-select: none;
  }
  td.O {
     background-color: blue;
