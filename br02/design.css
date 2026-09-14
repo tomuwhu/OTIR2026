@@ -23,3 +23,11 @@ td.p1 {
 td.O {
     visibility: hidden;
 }
+div {
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    padding:5px;
+    margin: 4px;
+    background-color: azure;
+}
