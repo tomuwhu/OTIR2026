@@ -13,14 +13,28 @@ def g(e):
 def f(e):
     e.target.clear()
     pos = int(e.target.id)
+
     if T[pos]:
         e.target <= "B"
     else:
-        asz = sum([T[pos + j * n + i] for i,j in [(-1, -1), (-1, 0), (-1, 1), 
-        (0, -1), (0, 1),  
-        (1, -1), (1, 0), (1, 1)]])
+        x = pos % n
+        y = pos // n
+
+        asz = 0
+
+        for dx, dy in [(-1, -1), (-1, 0), (-1, 1),
+                       (0, -1),           (0, 1),
+                       (1, -1),  (1, 0),  (1, 1)]:
+
+            nx = x + dx
+            ny = y + dy
+
+            if 0 <= nx < n and 0 <= ny < m:
+                asz += T[ny * n + nx]
+
         e.target <= asz
         e.target.classList.add(f"X{asz}")
+
 D <= H.TABLE([H.TR(
     H.TD("", id=f"{j * n + i}")
         .bind("click", f)
