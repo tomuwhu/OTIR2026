@@ -17,3 +17,9 @@ td {
     border-radius: 4px;
     cursor: pointer;
 }
+td.p1 {
+    background-color: bisque;
+}
+td.O {
+    visibility: hidden;
+}
