@@ -8,6 +8,8 @@ T = [1]*asz + [0]*(n * m - asz)
 sh(T)
 def g(e):
     e.target <= "Z"
+    e.preventDefault()
+    e.target.classList.add("Z")
 def f(e):
     e.target.clear()
     pos = int(e.target.id)
