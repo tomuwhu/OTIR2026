@@ -17,17 +17,27 @@ td {
     border-radius: 4px;
     cursor: pointer;
 }
-td.p1 {
-    background-color: bisque;
+td.X0 {
+    background-color: rgb(214, 202, 225);
 }
-td.O {
-    visibility: hidden;
+td.X1 {
+    background-color: rgb(183, 159, 206);
 }
-div {
-    font-size: 20px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px black;
-    padding:5px;
-    margin: 4px;
-    background-color: azure;
+td.X2 {
+    background-color: rgb(157, 129, 183);
+}
+td.X3 {
+    background-color: rgb(127, 94, 158);
+}
+td.X4 {
+    background-color: rgb(138, 81, 149);
+}
+td.X5 {
+    background-color: rgb(108, 59, 106);
+}
+td.X6 {
+    background-color: rgb(134, 22, 117);
+}
+td.Z {
+    background-color: rgb(255, 0, 0);
 }
