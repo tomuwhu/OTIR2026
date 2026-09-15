@@ -7,37 +7,44 @@ body {
 table {
     margin: auto;
     border-spacing: 6px;
+    background-color: rgb(197, 200, 171);
+    padding: 6px;
+    border-radius: 6px;
     user-select: none;
 }
 td {
     background-color: rgb(241, 249, 233);
     width: 30px;
     height: 30px;
-    box-shadow: 1px 1px 3px gray;
+    box-shadow: 1px 1px 3px rgb(174, 168, 168);
     border-radius: 4px;
     cursor: pointer;
 }
 td.X0 {
-    background-color: rgb(214, 202, 225);
+    background-color: rgb(239, 233, 244);
 }
 td.X1 {
-    background-color: rgb(183, 159, 206);
+    background-color: rgb(212, 197, 226);
 }
 td.X2 {
-    background-color: rgb(157, 129, 183);
+    background-color: rgb(182, 163, 200);
 }
 td.X3 {
-    background-color: rgb(127, 94, 158);
+    background-color: rgb(166, 141, 190);
 }
 td.X4 {
-    background-color: rgb(138, 81, 149);
+    background-color: rgb(150, 110, 158);
 }
 td.X5 {
-    background-color: rgb(108, 59, 106);
+    background-color: rgb(129, 89, 127);
 }
 td.X6 {
-    background-color: rgb(134, 22, 117);
+    background-color: rgb(132, 62, 122);
+    color: rgb(255, 255, 255);
 }
 td.Z {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 196, 196);
+}
+td.B {
+    background-color: rgb(252, 57, 57);
 }

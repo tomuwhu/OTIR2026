@@ -24,57 +24,41 @@ vege = False
 
 def f(e):
     global vege
-
     if vege:
         return
-
     megnyit(e.target)
-
 
 def megnyit(cella):
     global vege
-
     pos = int(cella.id)
-
     if pos in nyitva or vege:
         return
-
     nyitva.add(pos)
-
     if T[pos]:
         cella <= "💣"
-        cella.classList.add("Z")
+        cella.classList.add("B")
         vege = True
         return
-
     y = pos // n
     x = pos % n
-
     asz = 0
-
     for dy in [-1, 0, 1]:
         for dx in [-1, 0, 1]:
             if dx == 0 and dy == 0:
                 continue
-
             yy = y + dy
             xx = x + dx
-
             if 0 <= yy < m and 0 <= xx < n:
                 asz += T[yy * n + xx]
-
     cella <= asz
     cella.classList.add(f"X{asz}")
-
     if asz == 0:
         for dy in [-1, 0, 1]:
             for dx in [-1, 0, 1]:
                 if dx == 0 and dy == 0:
                     continue
-
                 yy = y + dy
                 xx = x + dx
-
                 if 0 <= yy < m and 0 <= xx < n:
                     megnyit(D[str(yy * n + xx)])
 D <= H.TABLE([H.TR(
