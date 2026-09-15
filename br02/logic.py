@@ -20,15 +20,23 @@ def g(e):
         e.target.classList.remove(f"Z")
     e.preventDefault()
 nyitva = set()
+vege = False
 
 def f(e):
+    global vege
+
+    if vege:
+        return
+
     megnyit(e.target)
 
 
 def megnyit(cella):
+    global vege
+
     pos = int(cella.id)
 
-    if pos in nyitva:
+    if pos in nyitva or vege:
         return
 
     nyitva.add(pos)
@@ -36,6 +44,7 @@ def megnyit(cella):
     if T[pos]:
         cella <= "💣"
         cella.classList.add("Z")
+        vege = True
         return
 
     y = pos // n
